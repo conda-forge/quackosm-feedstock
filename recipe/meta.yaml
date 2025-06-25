@@ -15,7 +15,7 @@ build:
     - QuackOSM = quackosm.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -52,6 +52,7 @@ test:
     - pip check
     - quackosm --help
     - QuackOSM --help
+    - quackosm --osm-extract-query Monaco --osm-extract-source Geofabrik
   requires:
     - pip
     - python {{ python_min }}
