@@ -1,5 +1,5 @@
 {% set name = "quackosm" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/quackosm-{{ version }}.tar.gz
-  sha256: 0133f8fe556b2873c37eca7d9b816b7380bd6493ed6875fbdedf0a08f03ef6ea
+  sha256: 9d34bb1edd23f09f44d45c73bfb12c75898629d9ef91c4042674ce1e9748ef23
 
 build:
   entry_points:
