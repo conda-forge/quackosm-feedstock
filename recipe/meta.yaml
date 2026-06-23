@@ -1,5 +1,5 @@
 {% set name = "quackosm" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/quackosm-{{ version }}.tar.gz
-  sha256: 9d34bb1edd23f09f44d45c73bfb12c75898629d9ef91c4042674ce1e9748ef23
+  sha256: 4bdc76677712a7de1ed515fc235c16acdd94c425be3c8738831f812f6c3918de
 
 build:
   entry_points:
@@ -38,9 +38,11 @@ requirements:
     - rich >=12.0.0
     - geopy >=2.0.0
     - numpy >=1.26.0
-    - rq_geo_toolkit >=2026.2.1
+    - rq_geo_toolkit >=2026.6.0
+    - anyascii >=0.3.3
    # Extra: cli
     - typer >=0.9.0
+    - click >=8.2.1
     - s2sphere >=0.2.5
 
 test:
